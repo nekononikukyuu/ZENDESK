@@ -12,13 +12,36 @@
   </nav>
 
   <h1>
-            {{!-- １６行目を右と入れ替え、  {{t 'submit_a_request'}} 　「t」はおそらく翻訳関数？--}}
+ {{!-- １６行目を右と入れ替え、  {{t 'submit_a_request'}} 　「t」は翻訳関数？--}}
     {{'お問い合わせ'}}
     <span class="follow-up-hint">
       {{follow_up}}
     </span>
   </h1>
+  
+{{!-- ２３～４１行目を森Gmの要請で加筆　--}}    
+   <table class=neW_riquest_pagE> 
+ 
+	 	<style type="text/css">
+			table.neW_riquest_pagE
+					{
+  				border-collapse: collapse;
+  				border: solid 1px #888;
+  				margin : 30px ;
+      		}
+  		
+	 		td  {
+  				padding: 5px 15px;
+ 		 			}
+		</style>
 
+ 	<td style="background-color: #f0f2f7; white-space: nowrap;" >対応時間</td><td><p>平日 8:30～17:00 （土日、祝祭日、夏季、年末年始特定休業日を除く）</p>
+お問い合わせは24時間受け付けておりますが、返信などの対応時間は原則として上記時間内となります。なお、お問い合わせの数、内容などによってはご返答までにお時間をいただく場合があります。予め、ご了承くださいますようお願いいたします。
+</td>
+  </table> 
+
+  
+  
   <div id="main-content" class="form">
     {{request_form wysiwyg=true}}
   </div>
