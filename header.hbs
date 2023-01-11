@@ -15,11 +15,10 @@
       <ul class="user-nav-list">
         <li>{{link 'community'}}</li>
         
- {{!-- ２０行目を右と入れ替え、<li>{{link 'new_request' class='submit-a-request'}}</li> --}}
         
         <li>{{#link 'new_request' class='submit-a-request'}}お問い合わせはこちら{{/link}}</li>
         
- <!-- LINE２３～２９　サインインの消去のためコメントアウト
+
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
@@ -27,12 +26,12 @@
             {{/link}}
           </li>
         {{/unless}}
--->
+
 
       </ul>
     </nav>
     
-  <!-- LINE36～5７　サインインの消去のためコメントアウト
+
     {{#if signed_in}}
       <div class="user-info dropdown">
         <button class="dropdown-toggle" aria-haspopup="true">
@@ -55,7 +54,7 @@
         </div>
       </div>
     {{/if}}
--->
+
 
   </div>
 
